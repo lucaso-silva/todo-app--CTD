@@ -1,0 +1,11 @@
+@import url("./styles-app/style.css");
+
+:root {
+    --main-font: 'Josefin Sans', sans-serif;
+
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 18px;
+}

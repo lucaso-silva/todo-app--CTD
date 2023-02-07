@@ -1,0 +1,26 @@
+.container {
+    padding: 2em 1.5em;
+}
+
+.todo-card {
+    padding: 1.5em 1em;
+}
+
+.new-todo {
+    margin-bottom: 1em;
+}
+
+.todo-list {
+    margin-bottom: 1em;
+}
+
+.list-info {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+}
+
+.list-filter {
+    display: flex;
+    justify-content: space-evenly;
+}
