@@ -14,51 +14,53 @@
 </head>
 
 <body>
-    <main class="container">
-        <banner class="banner"></banner>
-        <h1>TODO</h1>
-        <section class="todo-card">
-            <div class="new-todo">
+    <div class="container">
+        <section class="banner">
+            <h1>TODO</h1>
+            <input type="checkbox">
+        </section>
+        <main class="todo-card">
+            <section class="new-todo">
                 <input type="checkbox">
-                <input type="text" placeholder="Create a new todo...">
-            </div>
-            <div class="todo-list">
-                <div>
+                <input type="text" placeholder="Create a new todo..." class="input-todo">
+            </section>
+            <ul class="todo-list">
+                <li class="todo-note">
                     <input id="task" type="checkbox">
                     <label for="task">Complete online JavaScript course</label>
-                </div>
-                <div>
+                </li>
+                <li class="todo-note">
                     <input id="task" type="checkbox">
                     <label for="task">Jog around the park 3x</label>
-                </div>
-                <div>
+                </li>
+                <li class="todo-note">
                     <input id="task" type="checkbox">
                     <label for="task">10 minutes meditation</label>
-                </div>
-                <div>
+                </li>
+                <li class="todo-note">
                     <input id="task" type="checkbox">
                     <label for="task">Read for 1 hour</label>
-                </div>
-                <div>
+                </li>
+                <li class="todo-note">
                     <input id="task" type="checkbox">
                     <label for="task">Pick up groceries</label>
-                </div>
-                <div>
+                </li>
+                <li class="todo-note">
                     <input id="task" type="checkbox">
                     <label for="task">Complete Todo App</label>
-                </div>
-                <div class="list-info">
-                    <p>5 items left</p>
-                    <button>Clear Completed</button>
-                </div>
+                </li>
+            </ul>
+            <div class="list-info">
+                <p>5 items left</p>
+                <button class="btn-clear">Clear Completed</button>
             </div>
             <div class="list-filter">
-                <button>All</button>
-                <button>Active</button>
-                <button>Completed</button>
+                <button class="btn">All</button>
+                <button class="btn">Active</button>
+                <button class="btn">Completed</button>
             </div>
-    </main>
+        </main>
+    </div>
 
 </body>
-
 </html>
