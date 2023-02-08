@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODO APP - Developed by Lucas Oliveira</title>
+    <title>TO DO App - Developed by Lucas Oliveira</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -14,53 +14,57 @@
 </head>
 
 <body>
-    <div class="container">
-        <section class="banner">
-            <h1>TODO</h1>
+    <div class="main-container">
+        <div class="banner">
+            <h1 class="title">TODO</h1>
             <input type="checkbox">
-        </section>
-        <main class="todo-card">
-            <section class="new-todo">
-                <input type="checkbox">
-                <input type="text" placeholder="Create a new todo..." class="input-todo">
-            </section>
-            <ul class="todo-list">
-                <li class="todo-note">
-                    <input id="task" type="checkbox">
-                    <label for="task">Complete online JavaScript course</label>
-                </li>
-                <li class="todo-note">
-                    <input id="task" type="checkbox">
-                    <label for="task">Jog around the park 3x</label>
-                </li>
-                <li class="todo-note">
-                    <input id="task" type="checkbox">
-                    <label for="task">10 minutes meditation</label>
-                </li>
-                <li class="todo-note">
-                    <input id="task" type="checkbox">
-                    <label for="task">Read for 1 hour</label>
-                </li>
-                <li class="todo-note">
-                    <input id="task" type="checkbox">
-                    <label for="task">Pick up groceries</label>
-                </li>
-                <li class="todo-note">
-                    <input id="task" type="checkbox">
-                    <label for="task">Complete Todo App</label>
-                </li>
-            </ul>
-            <div class="list-info">
-                <p>5 items left</p>
-                <button class="btn-clear">Clear Completed</button>
-            </div>
-            <div class="list-filter">
-                <button class="btn">All</button>
-                <button class="btn">Active</button>
-                <button class="btn">Completed</button>
-            </div>
-        </main>
+        </div>
+        <div class="container-app">
+            <main class="todo-card">
+                <form name="new-todo" class="new-todo">
+                    <input type="checkbox" class="input-checkbox">
+                    <input type="text" name="new-task" placeholder="Create a new todo..." class="input-todo">
+                </form>
+                <ul class="todo-list">
+                    <li class="todo-note">
+                        <input id="task" type="checkbox">
+                        <label for="task" class="todo-note-label">Complete online JavaScript course</label>
+                    </li>
+                    <li class="todo-note">
+                        <input id="task" type="checkbox">
+                        <label for="task" class="todo-note-label">Jog around the park 3x</label>
+                    </li>
+                    <li class="todo-note">
+                        <input id="task" type="checkbox">
+                        <label for="task" class="todo-note-label">10 minutes meditation</label>
+                    </li>
+                    <li class="todo-note">
+                        <input id="task" type="checkbox">
+                        <label for="task" class="todo-note-label">Read for 1 hour</label>
+                    </li>
+                    <li class="todo-note">
+                        <input id="task" type="checkbox">
+                        <label for="task" class="todo-note-label">Pick up groceries</label>
+                    </li>
+                    <li class="todo-note">
+                        <input id="task" type="checkbox">
+                        <label for="task" class="todo-note-label">Complete Todo App</label>
+                    </li>
+                </ul>
+                <div class="list-info">
+                    <p class="items-left">5 items left</p>
+                    <button class="btn-clear">Clear Completed</button>
+                </div>
+                <div class="list-filter">
+                    <button class="btn">All</button>
+                    <button class="btn">Active</button>
+                    <button class="btn">Completed</button>
+                </div>
+            </main>
+        </div>
     </div>
 
+<script src="./assets/js/app.js"></script>
 </body>
+
 </html>

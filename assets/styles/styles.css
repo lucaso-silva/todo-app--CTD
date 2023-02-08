@@ -13,14 +13,33 @@
     /* Dark Theme */
     --dark-bg: hsl(235, 21%, 11%);
     --todo-dark-bg: hsl(235, 24%, 19%);
-    --light-grayish-blue: hsl(234, 39%, 85%);
-    --light-grayish-blue-hover: hsl(236, 33%, 92%);
+    --font-tasks: hsl(234, 39%, 85%);
+    --color-title: hsl(236, 33%, 92%);
     --font-info: hsl(234, 11%, 52%);
     --very-dark-grayish-blue: hsl(233, 14%, 35%);
     --line-color: hsl(237, 14%, 26%);
 }
 
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--main-font);
     font-size: 16px;
+    color: var(--font-tasks);
+}
+
+input[type=checkbox] {
+    appearance: none;
+    border: .5px solid var(--line-color);
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked {
+    background-image: linear-gradient (to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%))
 }
