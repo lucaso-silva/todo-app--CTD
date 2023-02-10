@@ -22,10 +22,10 @@
         <div class="container-app">
             <main class="todo-card">
                 <form name="new-todo" class="new-todo">
-                    <input type="checkbox" class="input-checkbox">
-                    <input type="text" name="new-task" placeholder="Create a new todo..." class="input-todo">
+                    <input type="checkbox" name="checkbox" id="checkbox-nwtodo" class="input-checkbox" value="off">
+                    <input type="text" name="new-task" id="new-task" placeholder="Create a new todo..." class="input-todo">
                 </form>
-                <ul class="todo-list">
+                <ul class="todo-list" id="todo-list">
                     <li class="todo-note">
                         <input id="task" type="checkbox">
                         <label for="task" class="todo-note-label">Complete online JavaScript course</label>
@@ -64,7 +64,7 @@
         </div>
     </div>
 
-<script src="./assets/js/app.js"></script>
+<script src="./assets/js/addNewTodo.js"></script>
 </body>
 
 </html>
