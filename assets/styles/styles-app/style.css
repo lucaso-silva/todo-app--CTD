@@ -60,6 +60,11 @@
     /* margin-bottom: 1em; */
 }
 
+.checked {
+    text-decoration: line-through;
+    color: var(--checked);
+}
+
 .todo-note {
     padding: 1em;
     border-bottom: 1px solid var(--line-color);
