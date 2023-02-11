@@ -10,11 +10,12 @@ checkNwTodo.addEventListener("change", () => {
       setTimeout(() => {
         todoList.insertAdjacentHTML(
           "afterbegin",
-          `
-            <li class="todo-note">
-            <input id="task" type="checkbox" name="check-task">
-            <label for="task" class="todo-note-label">${newTodoTask.value}</label>
-            </li>
+          `<div class="li-todo">
+              <li class="todo-note">
+              <input id="task" type="checkbox" name="check-task">
+              <label for="task" class="todo-note-label">${newTodoTask.value}</label>
+              </li>
+            </div>
             `
         );
         checkNwTodo.checked = false;
