@@ -17,39 +17,51 @@
     <div class="main-container">
         <div class="banner">
             <h1 class="title">TODO</h1>
-            <input type="checkbox">
+            <input type="radio">
         </div>
         <div class="container-app">
             <main class="todo-card">
                 <form name="new-todo" class="new-todo">
-                    <input type="checkbox" name="checkbox" id="checkbox-nwtodo" class="input-checkbox" value="off">
-                    <input type="text" name="new-task" id="new-task" placeholder="Create a new todo..." class="input-todo">
+                    <input type="checkbox" name="checkbox" class="input-checkbox" value="off">
+                    <input type="text" name="new-task" placeholder="Create a new todo..." class="input-todo">
                 </form>
                 <ul class="todo-list" id="todo-list">
-                    <li class="todo-note">
-                        <input id="task" type="checkbox" name="check-task">
-                        <label for="task" class="todo-note-label" name="task">Complete online JavaScript course</label>
-                    </li>
-                    <li class="todo-note">
-                        <input id="task" type="checkbox" name="check-task">
-                        <label for="task" class="todo-note-label" name="task">Jog around the park 3x</label>
-                    </li>
-                    <li class="todo-note">
-                        <input id="task" type="checkbox" name="check-task">
-                        <label for="task" class="todo-note-label" name="task">10 minutes meditation</label>
-                    </li>
-                    <li class="todo-note">
-                        <input id="task" type="checkbox" name="check-task">
-                        <label for="task" class="todo-note-label" name="task">Read for 1 hour</label>
-                    </li>
-                    <li class="todo-note">
-                        <input id="task" type="checkbox" name="check-task">
-                        <label for="task" class="todo-note-label" name="task">Pick up groceries</label>
-                    </li>
-                    <li class="todo-note">
-                        <input id="task" type="checkbox" name="check-task">
-                        <label for="task" class="todo-note-label" name="task">Complete Todo App</label>
-                    </li>
+                    <div class="li-todo">
+                        <li class="todo-note">
+                            <input id="task-1" type="checkbox" name="check-task">
+                            <label for="task-1" class="todo-note-label" name="task">Complete online JavaScript course</label>
+                        </li>
+                    </div>
+                    <div class="li-todo">
+                        <li class="todo-note">
+                            <input id="task-2" type="checkbox" name="check-task">
+                            <label for="task-2" class="todo-note-label" name="task">Jog around the park 3x</label>
+                        </li>
+                    </div>
+                    <div class="li-todo">
+                        <li class="todo-note">
+                            <input id="task-3" type="checkbox" name="check-task">
+                            <label for="task-3" class="todo-note-label" name="task">10 minutes meditation</label>
+                        </li>
+                    </div>
+                    <div class="li-todo">
+                        <li class="todo-note">
+                            <input id="task-4" type="checkbox" name="check-task">
+                            <label for="task-4" class="todo-note-label" name="task">Read for 1 hour</label>
+                        </li>
+                    </div>
+                    <div class="li-todo">
+                        <li class="todo-note">
+                            <input id="task-5" type="checkbox" name="check-task">
+                            <label for="task-5" class="todo-note-label" name="task">Pick up groceries</label>
+                        </li>
+                    </div>
+                    <div class="li-todo">
+                        <li class="todo-note">
+                            <input id="task-6" type="checkbox" name="check-task">
+                            <label for="task-6" class="todo-note-label" name="task">Complete Todo App</label>
+                        </li>
+                    </div>
                 </ul>
                 <div class="list-info">
                     <p class="items-left">5 items left</p>

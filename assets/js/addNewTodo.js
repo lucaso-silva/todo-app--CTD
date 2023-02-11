@@ -6,19 +6,20 @@ checkNwTodo.addEventListener("change", () => {
   const todoList = document.querySelector("#todo-list");
 
   if (checkNwTodo.checked) {
-    setTimeout(() => {
-      
-      todoList.insertAdjacentHTML(
-        "afterbegin",
-        `
-          <li class="todo-note">
-          <input id="task" type="checkbox" name="check-task">
-          <label for="task" class="todo-note-label">${newTodoTask.value}</label>
-          </li>
+    if(newTodoTask.value.length >= 3) {
+      setTimeout(() => {
+        todoList.insertAdjacentHTML(
+          "afterbegin",
           `
-      );
-      checkNwTodo.checked = false;
-      newTodoTask.value = "";
-    }, 500);
+            <li class="todo-note">
+            <input id="task" type="checkbox" name="check-task">
+            <label for="task" class="todo-note-label">${newTodoTask.value}</label>
+            </li>
+            `
+        );
+        checkNwTodo.checked = false;
+        newTodoTask.value = "";
+      }, 500);
+    }
   }
 });
