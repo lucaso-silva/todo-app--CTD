@@ -86,6 +86,10 @@
     color: var(--font-info);
 }
 
+.counter {
+    margin-left: .5em;
+}
+
 .list-filter {
     background-color: var(--todo-dark-bg);
     display: flex;
