@@ -15,6 +15,7 @@ export default function addNewTodo() {
   const inputCheckTodo = document.createElement("input");
   inputCheckTodo.type = "checkbox";
   inputCheckTodo.id = "task-" + i;
+  inputCheckTodo.name = "check-todo";
   inputCheckTodo.classList.add("check-task");
   i++;
 
