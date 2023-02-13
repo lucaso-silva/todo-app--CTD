@@ -1,114 +1,138 @@
+.main-container {
+    box-sizing: content-box;
+}
 
 .banner {
-    background-image: url("../../imgs/bg-mobile-dark.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 2.25em 1.5em;
-    height: 20.75vh;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    position: absolute;
-    width: 100%;
+  background-image: url("../../imgs/bg-mobile-dark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2.25em 1.5em;
+  height: 20.75vh;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
 }
 
 .container-app {
-    background-color: var(--dark-bg);
-    padding: 0 1.5em;
+  background-color: var(--dark-bg);
+  padding: 0 2em;
+  height: 100vh;
 }
 
 .title {
-    font-size: 2em;
-    font-weight: 700;
-    color: var(--color-title);
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--color-title);
 }
 .todo-card {
-    padding: 5.75em 0;
-    background-color: transparent;
-    position: relative;
+  padding: 5.75em 0;
+  background-color: transparent;
+  position: relative;
 }
 
 .new-todo {
-    margin-bottom: 1em;
-    background-color: var(--todo-dark-bg);
-    padding: .75em;
-    border-radius: 5px;
-    font-family: var(--main-font);
-    display: flex;
-    align-items: center;
+  margin-bottom: 1em;
+  background-color: var(--todo-dark-bg);
+  padding: 0.75em;
+  border-radius: 5px;
+  font-family: var(--main-font);
+  display: flex;
+  align-items: center;
 }
 
 .input-todo {
-    padding: .25em;
-    background-color: transparent;
-    border: none;
-    font-family: var(--main-font);
-    font-size: 1em;
-    margin-left: .5em;
+  padding: 0.25em;
+  background-color: transparent;
+  border: none;
+  font-family: var(--main-font);
+  font-size: 1em;
+  margin-left: 0.5em;
 }
 
 .input-todo:focus {
-    padding-left: 1em;
+  padding-left: 1em;
 }
 
 .todo-list {
-    background-color: var(--todo-dark-bg);
-    padding: 0 .75em;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    font-size: .85em;
-    /* margin-bottom: 1em; */
+  background-color: var(--todo-dark-bg);
+  padding: 0 0.75em;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  font-size: 0.85em;
 }
 
 .checked {
-    text-decoration: line-through;
-    color: var(--checked);
+  text-decoration: line-through;
+  color: var(--checked);
 }
 
 .todo-note {
-    padding: 1em;
-    border-bottom: 1px solid var(--line-color);
-    display: flex;
-    align-items: center;
+  padding: 1em;
+  border-bottom: 1px solid var(--line-color);
+  display: flex;
+  align-items: center;
 }
 
 .todo-note-label {
-    margin-left: .75em;
+  margin-left: 0.75em;
 }
 
 .list-info {
-    display: flex;
-    justify-content: space-between;
-    padding: .75em;
-    background-color: var(--todo-dark-bg);
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    color: var(--font-info);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 0.75em;
+  background-color: var(--todo-dark-bg);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: var(--font-info);
+  font-size: .9em;
 }
 
 .counter {
-    margin-left: .5em;
+  margin-left: 0.5em;
 }
 
 .list-filter {
-    background-color: var(--todo-dark-bg);
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 1em;
-    padding: .75em;
-    border-radius: 5px;
+  background-color: var(--todo-dark-bg);
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1em;
+  padding: 0.75em;
+  border-radius: 5px;
 }
 
-.btn, .btn-clear {
-    background-color: transparent;
-    border: none;
-    color: var(--font-info);
-    font-family: var(--main-font);
+.btn,
+.btn-clear {
+  background-color: transparent;
+  border: none;
+  color: var(--font-info);
+  font-family: var(--main-font);
 }
-/* @media screen and (min-width: 768px) {
-    .container {
+
+@media screen and (min-width: 768px) {
+  .container-app {
+    padding: 0 4.75em;
+  }
+
+  .banner {
+    padding: 3em 4.5em;
+    height: 35.5vh;
+}
+
+.todo-card {
+    padding-top: 7em;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+    .container-app {
+        padding: 0 6.5em;
     }
 
-    .todo-card {
+    .banner {
+        padding: 3.75em 6.25em;
     }
-} */
+}

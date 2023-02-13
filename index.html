@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="main-container">
+    <section class="main-container">
         <div class="banner">
             <h1 class="title">TODO</h1>
             <input type="radio">
@@ -29,23 +29,20 @@
                     
                 </ul>
                 <div class="list-info">
-                    <p class="items-left"><span class="counter"></span> items left</p>
+                    <p class="items-left"><span class="counter">0</span> items left</p>
                     <button class="btn-clear" id="btn-clear">Clear Completed</button>
                 </div>
                 <div class="list-filter">
-                    <button class="btn" id="all">All</button>
-                    <button class="btn" id="active">Active</button>
-                    <button class="btn" id="completed">Completed</button>
+                    <button class="btn" id="all" name="btn-filter">All</button>
+                    <button class="btn" id="active" name="btn-filter">Active</button>
+                    <button class="btn" id="completed" name="btn-filter">Completed</button>
                 </div>
             </main>
         </div>
-    </div>
+    </section>
 
 <script src="./assets/js/app.js" type="module"></script>
-<!-- <script src="./assets/js/checkItens.js"></script>
-<script src="./assets/js/addNewTodo.js"></script>
-<script src="./assets/js/clear.js"></script>
-<script src="./assets/js/counter.js"></script> -->
+<script src="./assets/js/counter.js" type="module"></script>
 </body>
 
 </html>

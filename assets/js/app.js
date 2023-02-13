@@ -1,10 +1,13 @@
 import addNewTodo from "./addNewTodo.js";
 import clearCompletedTasks from "./clearCompleted.js";
+import filterTodo from "./filterTodo.js";
+import numTodos from "./counter.js";
 
 const newTask = document.querySelector('[name="new-task"]');
 const addNewTask = document.querySelector('[name="checkbox-new-todo"]');
 const todoList = document.querySelector("#todo-list");
 const btnClear = document.querySelector("#btn-clear");
+const btnsFilter = document.querySelectorAll('[name="btn-filter"]');
 
 addNewTask.addEventListener("change", () => {
   if (addNewTask.checked) {
@@ -16,6 +19,8 @@ addNewTask.addEventListener("change", () => {
       }, 500);
     }
   }
+
+  numTodos();
 });
 
 todoList.addEventListener("change", () => {
@@ -34,7 +39,12 @@ todoList.addEventListener("change", () => {
       }
     });
   });
+
+  numTodos();
 });
 
 
 btnClear.addEventListener("click", clearCompletedTasks);
+
+btnsFilter.forEach(btn => btn.addEventListener("click", filterTodo));
+

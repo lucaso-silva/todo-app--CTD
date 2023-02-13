@@ -50,4 +50,10 @@ li:hover {
 
 button {
     cursor: pointer;
+    font-size: 1em;
+}
+
+button:active {
+    color: var(--bright-blue);
+    font-weight: 700;
 }
