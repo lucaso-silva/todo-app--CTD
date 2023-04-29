@@ -47,4 +47,3 @@ todoList.addEventListener("change", () => {
 btnClear.addEventListener("click", clearCompletedTasks);
 
 btnsFilter.forEach(btn => btn.addEventListener("click", filterTodo));
-
