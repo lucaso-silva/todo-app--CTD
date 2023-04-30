@@ -23,6 +23,20 @@ addNewTask.addEventListener("change", () => {
   numTodos();
 });
 
+newTask.addEventListener("keydown", (e) => {
+  if(e.code === "Enter") {
+    e.preventDefault();
+    if (newTask.value.length >= 3) {
+      addNewTodo();
+      setTimeout(() => {
+        newTask.value = "";
+      }, 500);
+    }
+  numTodos(); 
+  }
+});
+
+
 todoList.addEventListener("change", () => {
   const allTodo = document.querySelectorAll('[name="check-todo"]');
 
