@@ -123,6 +123,8 @@
 
 .todo-card {
     padding-top: 7em;
+    width: 70%;
+    margin: 0 auto;
 }
 
 }

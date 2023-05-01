@@ -23,10 +23,12 @@ export default function filterTodo() {
       allCompletedTasks.forEach(completedTask => {
          completedTask.classList.add("hide");
       })
+
+      isActiveTasks();
    }
 };
 
-function isActiveTasks() {
-   
+function isActiveTasks(allTasksList) {
+   console.log(allTasksList);
 }
 
