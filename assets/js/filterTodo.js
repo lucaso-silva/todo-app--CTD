@@ -2,33 +2,32 @@ export default function filterTodo() {
    const buttonActived = document.getElementById(this.id);
    const allTasksList = document.querySelectorAll(".todo-note");
    const category = buttonActived.id;
-   const allCompletedTasks = document.querySelectorAll(".checked");
-   const activeTasks = isActiveTasks();   
+   const allTasksArray = Array.from(allTasksList)
    
    if(category === "completed") {
-      allCompletedTasks.forEach(completedTask => {
-         completedTask.classList.remove("hide");
-      })
+      allTasksArray.map(task => {
+         if(task.classList.contains("checked")) {
+            task.classList.remove("hide");
+         } else {
+            task.classList.add("hide");
+         };
+      });
    }
 
    if(category === "all") {
-      console.log("button all selected");
-      allCompletedTasks.forEach(completedTask => {
-         completedTask.classList.remove("hide");
+      allTasksList.forEach(task => {
+         task.classList.remove("hide");
       })
    }
 
    if(category === "active") {
-      console.log(allCompletedTasks);
-      allCompletedTasks.forEach(completedTask => {
-         completedTask.classList.add("hide");
-      })
-
-      isActiveTasks();
+      allTasksArray.map(task => {
+         if(task.classList.contains("checked")) {
+            task.classList.add("hide");
+         } else {
+            task.classList.remove("hide");
+         };
+      });
    }
 };
-
-function isActiveTasks(allTasksList) {
-   console.log(allTasksList);
-}
 
