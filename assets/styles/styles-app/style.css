@@ -1,5 +1,5 @@
 .main-container {
-    box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .banner {
@@ -13,6 +13,10 @@
   justify-content: space-between;
   position: absolute;
   width: 100%;
+}
+
+.banner--light {
+  background-image: url("../../imgs/bg-mobile-light.jpg");
 }
 
 .container-app {
@@ -43,6 +47,7 @@
 }
 
 .input-todo {
+  color: var(--color-title);
   padding: 0.25em;
   background-color: transparent;
   border: none;
@@ -87,7 +92,7 @@
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   color: var(--font-info);
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 .counter {
@@ -112,29 +117,66 @@
 }
 
 @media screen and (min-width: 768px) {
+  .title {
+    font-size: 2.75em;
+  }
+
   .container-app {
     padding: 0 4.75em;
   }
 
   .banner {
+    background-image: url("../../imgs/bg-desktop-dark.jpg");
     padding: 3em 4.5em;
     height: 35.5vh;
-}
+  }
 
-.todo-card {
+  .banner--light {
+    background-image: url("../../imgs/bg-desktop-light.jpg");
+  }
+
+  .todo-card {
     padding-top: 7em;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
-}
+  }
 
+  .input-todo,
+  .todo-list {
+    font-size: 1.25em;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .container-app {
-        padding: 0 6.5em;
-    }
+  .container-app {
+    padding: 0 6.5em;
+  }
 
-    .banner {
-        padding: 3.75em 6.25em;
-    }
+  .title {
+    font-size: 3.75em;
+  }
+
+  .banner {
+    padding: 3.75em 6.25em;
+  }
+
+  .input-todo,
+  .todo-list {
+    font-size: 1.5em;
+  }
+
+  .todo-card {
+    padding-top: 10em;
+  }
+
+  .list-info,
+  .list-filter {
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .todo-card {
+    width: 75%;
+  }
 }

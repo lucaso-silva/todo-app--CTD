@@ -8,6 +8,17 @@ const addNewTask = document.querySelector('[name="checkbox-new-todo"]');
 const todoList = document.querySelector("#todo-list");
 const btnClear = document.querySelector("#btn-clear");
 const btnsFilter = document.querySelectorAll('[name="btn-filter"]');
+const toggleColor = document.querySelector(".toggle-mode");
+const banner = document.querySelector(".banner");
+
+toggleColor.addEventListener("click", () => {
+  if(toggleColor.checked) {
+    banner.classList.add("banner--light")
+  } else {
+
+    banner.classList.remove("banner--light")
+  };
+})
 
 addNewTask.addEventListener("change", () => {
   if (addNewTask.checked) {
