@@ -1,3 +1,7 @@
+.toggle-mode {
+  display: none;
+}
+
 .main-container {
   box-sizing: content-box;
 }
@@ -13,10 +17,6 @@
   justify-content: space-between;
   position: absolute;
   width: 100%;
-}
-
-.banner--light {
-  background-image: url("../../imgs/bg-mobile-light.jpg");
 }
 
 .container-app {
@@ -129,11 +129,7 @@
     background-image: url("../../imgs/bg-desktop-dark.jpg");
     padding: 3em 4.5em;
     height: 35.5vh;
-  }
-
-  .banner--light {
-    background-image: url("../../imgs/bg-desktop-light.jpg");
-  }
+  }  
 
   .todo-card {
     padding-top: 7em;

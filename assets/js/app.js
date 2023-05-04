@@ -2,6 +2,9 @@ import addNewTodo from "./addNewTodo.js";
 import clearCompletedTasks from "./clearCompleted.js";
 import filterTodo from "./filterTodo.js";
 import numTodos from "./counter.js";
+import { addLightMode, removeLightMode } from "./changeMode.js";
+
+
 
 const newTask = document.querySelector('[name="new-task"]');
 const addNewTask = document.querySelector('[name="checkbox-new-todo"]');
@@ -9,14 +12,12 @@ const todoList = document.querySelector("#todo-list");
 const btnClear = document.querySelector("#btn-clear");
 const btnsFilter = document.querySelectorAll('[name="btn-filter"]');
 const toggleColor = document.querySelector(".toggle-mode");
-const banner = document.querySelector(".banner");
 
 toggleColor.addEventListener("click", () => {
   if(toggleColor.checked) {
-    banner.classList.add("banner--light")
+    addLightMode();
   } else {
-
-    banner.classList.remove("banner--light")
+    removeLightMode();
   };
 })
 

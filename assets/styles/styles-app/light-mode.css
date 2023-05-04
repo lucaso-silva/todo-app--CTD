@@ -1,0 +1,44 @@
+.banner--light {
+  background-image: url("../../imgs/bg-mobile-light.jpg");
+}
+
+.container-app--light {
+    background-color: var(--very-light-grayishblue);
+}
+
+.new-todo--light {
+    background-color: var(--very-light-gray);
+}
+
+.input-todo--light {
+    color: var(--line-color);
+}
+
+.todo-list--light {
+    background-color: var(--very-light-gray);
+    color: var(--very-dark-grayish-blue);
+}
+
+.list-info--light, .list-filter--light {
+    background-color: var(--very-light-gray);
+}
+
+.todo-note--light {
+  border-bottom: 1px solid var(--light-grayish-blue);
+}
+
+.checked--light {
+  color: var(--font-info);
+}
+
+@media screen and (min-width: 768px) {
+  .banner--light {
+    background-image: url("../../imgs/bg-desktop-light.jpg");
+  }
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1440px) {
+}

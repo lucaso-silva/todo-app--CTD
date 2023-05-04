@@ -1,4 +1,5 @@
 @import url("./styles-app/style.css");
+@import url("./styles-app/light-mode.css");
 
 :root {
     --main-font: 'Josefin Sans', sans-serif;
