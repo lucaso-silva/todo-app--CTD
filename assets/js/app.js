@@ -12,6 +12,8 @@ const todoList = document.querySelector("#todo-list");
 const btnClear = document.querySelector("#btn-clear");
 const btnsFilter = document.querySelectorAll('[name="btn-filter"]');
 const toggleColor = document.querySelector(".toggle-mode");
+const listInfo = document.querySelector(".list-info");
+const listFilter = document.querySelector(".list-filter");
 
 toggleColor.addEventListener("click", () => {
   if(toggleColor.checked) {
@@ -25,6 +27,8 @@ addNewTask.addEventListener("change", () => {
   if (addNewTask.checked) {
     if (newTask.value.length >= 3) {
       addNewTodo();
+      listInfo.classList.remove("hide");
+      listFilter.classList.remove("hide");
       setTimeout(() => {
         addNewTask.checked = false;
         newTask.value = "";
@@ -40,6 +44,8 @@ newTask.addEventListener("keydown", (e) => {
     e.preventDefault();
     if (newTask.value.length >= 3) {
       addNewTodo();
+      listInfo.classList.remove("hide");
+      listFilter.classList.remove("hide");
       setTimeout(() => {
         newTask.value = "";
       }, 500);

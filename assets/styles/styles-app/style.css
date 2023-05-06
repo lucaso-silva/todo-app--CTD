@@ -30,6 +30,11 @@
   font-weight: 700;
   color: var(--color-title);
 }
+
+.img-toggle {
+  width: 25px;
+}
+
 .todo-card {
   padding: 5.75em 0;
   background-color: transparent;
@@ -121,6 +126,10 @@
     font-size: 2.75em;
   }
 
+  .img-toggle {
+    width: 30px;
+  }
+
   .container-app {
     padding: 0 4.75em;
   }
@@ -152,6 +161,10 @@
     font-size: 3.75em;
   }
 
+  .img-toggle {
+    width: 40px;
+  }
+
   .banner {
     padding: 3.75em 6.25em;
   }
@@ -174,5 +187,9 @@
 @media screen and (min-width: 1440px) {
   .todo-card {
     width: 75%;
+  }
+
+  .img-toggle {
+    width: 45px;
   }
 }
