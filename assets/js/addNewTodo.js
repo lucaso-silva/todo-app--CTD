@@ -24,8 +24,13 @@ export default function addNewTodo() {
   todoLabel.classList.add("todo-note-label");
   todoLabel.innerHTML = newTask.value;
 
+  const todoDelBtn = document.createElement("img");
+  todoDelBtn.setAttribute("src", "./assets/imgs/del.svg")
+  todoDelBtn.classList.add("todo-del")
+
   todoLi.appendChild(inputCheckTodo);
   todoLi.appendChild(todoLabel);
+  todoLi.appendChild(todoDelBtn);
 
   todoList.appendChild(todoDiv);
 }

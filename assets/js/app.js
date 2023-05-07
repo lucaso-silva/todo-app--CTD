@@ -5,13 +5,13 @@ import numTodos from "./counter.js";
 import { addLightMode, removeLightMode } from "./changeMode.js";
 
 
-
+const toggleColor = document.querySelector(".toggle-mode");
 const newTask = document.querySelector('[name="new-task"]');
 const addNewTask = document.querySelector('[name="checkbox-new-todo"]');
 const todoList = document.querySelector("#todo-list");
+const delTodoBtns = document.querySelectorAll(".todo-del")
 const btnClear = document.querySelector("#btn-clear");
 const btnsFilter = document.querySelectorAll('[name="btn-filter"]');
-const toggleColor = document.querySelector(".toggle-mode");
 const listInfo = document.querySelector(".list-info");
 const listFilter = document.querySelector(".list-filter");
 
@@ -75,7 +75,14 @@ todoList.addEventListener("change", () => {
   numTodos();
 });
 
+delTodoBtns.forEach((delTodoBtn) => {
+  delTodoBtn.addEventListener("click", () => {
+    console.log("hello world!!");
+  })
+})
 
 btnClear.addEventListener("click", clearCompletedTasks);
 
 btnsFilter.forEach(btn => btn.addEventListener("click", filterTodo));
+
+
